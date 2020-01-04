@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="column col-4" data-bind="foreach: list.one">
+                    <div data-bind="dev-template: {url: '/test/item.html', data: $data}"></div>
+                </div>
+                <div class="column col-4" data-bind="foreach: list.two">
+                    <div data-bind="dev-template: {url: '/test/item.html', data: $data}"></div>
+                </div>
+                <div class="column col-4" data-bind="foreach: list.three">
+                    <div data-bind="dev-template: {url: '/test/item.html', data: $data}"></div>
+                </div>
+            </div>
+            <div data-bind="dev-template: {url: '/test/footer.html'}"></div>
+        </div>
+    </body>
+</html>
